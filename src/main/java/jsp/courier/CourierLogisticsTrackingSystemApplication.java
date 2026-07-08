@@ -1,0 +1,13 @@
+package jsp.courier;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourierLogisticsTrackingSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CourierLogisticsTrackingSystemApplication.class, args);
+	}
+
+}
