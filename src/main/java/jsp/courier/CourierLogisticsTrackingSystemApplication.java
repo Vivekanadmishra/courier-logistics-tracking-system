@@ -9,5 +9,4 @@ public class CourierLogisticsTrackingSystemApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CourierLogisticsTrackingSystemApplication.class, args);
 	}
-
 }
