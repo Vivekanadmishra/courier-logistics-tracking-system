@@ -11,23 +11,22 @@ import jakarta.validation.constraints.Pattern;
 
 @Entity
 public class Customer {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotBlank(message = "Name is required")
+ //   @NotBlank(message = "Name is required")
     private String name;
 
-    @Email(message = "Invalid email format")
-    @Column(unique = true, nullable = false)
+ //   @Email(message = "Invalid email format")
+ //   @Column(unique = true, nullable = false)
     private String email;
 
     @Pattern(regexp = "^[0-9]{10}$", message = "Phone number must contain exactly 10 digits")
-    @Column(unique = true, nullable = false)
+  //  @Column(unique = true, nullable = false)
     private String phoneNo;
 
-    @NotBlank(message = "Address is required")
+  //  @NotBlank(message = "Address is required")
     private String address;
 
 	public Integer getId() {
