@@ -17,7 +17,7 @@ public class CustomerService {
 
     @Autowired
     private CustomerRepository customerRepository;
-
+ 
     public ResponseEntity<String> saveCustomer(Customer customer) {
          customerRepository.save(customer);
          return  new ResponseEntity<> ("data save",HttpStatus.CREATED);
@@ -30,8 +30,6 @@ public class CustomerService {
     }
     
 //    Delete Data Using Id
-    private CustomerRepository customerRepository1;
-
     public ResponseEntity<String> deleteCustomer(Integer id) {
 
         Optional<Customer> customer = customerRepository.findById(id);
@@ -46,8 +44,6 @@ public class CustomerService {
     
 //    Update Data using Id
     
-    private CustomerRepository customerRepository2;
-
     public ResponseEntity<Customer> updateCustomer(Integer id, Customer customer) {
 
         Optional<Customer> opt = customerRepository.findById(id);
@@ -58,8 +54,9 @@ public class CustomerService {
 
             // Update fields
             existingCustomer.setName(customer.getName());
-            existingCustomer.setEmail(customer.getEmail());
-            existingCustomer.setPhoneNo(customer.getPhoneNo());
+//            existingCustomer.setEmail(customer.getEmail());
+//            existingCustomer.setPhoneNo(customer.getPhoneNo());
+//            existingCustomer.setAddress(customer.getAddress());
 
             Customer updatedCustomer = customerRepository.save(existingCustomer);
 

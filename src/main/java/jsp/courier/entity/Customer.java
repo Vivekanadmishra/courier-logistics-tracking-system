@@ -22,7 +22,7 @@ public class Customer {
  //   @Column(unique = true, nullable = false)
     private String email;
 
-    @Pattern(regexp = "^[0-9]{10}$", message = "Phone number must contain exactly 10 digits")
+ //   @Pattern(regexp = "^[0-9]{10}$", message = "Phone number must contain exactly 10 digits")
   //  @Column(unique = true, nullable = false)
     private String phoneNo;
 
