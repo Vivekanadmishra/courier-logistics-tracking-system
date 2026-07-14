@@ -54,9 +54,9 @@ public class CustomerService {
 
             // Update fields
             existingCustomer.setName(customer.getName());
-//            existingCustomer.setEmail(customer.getEmail());
-//            existingCustomer.setPhoneNo(customer.getPhoneNo());
-//            existingCustomer.setAddress(customer.getAddress());
+            existingCustomer.setEmail(customer.getEmail());
+            existingCustomer.setPhoneNo(customer.getPhoneNo());
+            existingCustomer.setAddress(customer.getAddress());
 
             Customer updatedCustomer = customerRepository.save(existingCustomer);
 
